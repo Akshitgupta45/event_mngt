@@ -1,0 +1,7 @@
+{"email":"divyansh@test.com","level":"info","message":"LOGIN_SUCCESSFUL","timestamp":"2024-01-17T07:02:10.136Z"}
+{"email":"divyansh@test.com","level":"info","message":"LOGIN_SUCCESSFUL","timestamp":"2024-01-17T07:03:12.614Z"}
+{"level":"info","message":"LOGIN_FAILURE","reason":"User does not exist with Iddivyansh123@test.com","timestamp":"2024-01-17T09:18:22.809Z"}
+{"level":"info","message":"LOGIN_FAILURE","reason":"User does not have correct password divyansh@test.com","timestamp":"2024-01-17T09:20:22.856Z"}
+{"email":"divyansh@test.com","level":"info","message":"LOGIN_SUCCESSFUL","timestamp":"2024-01-17T09:24:56.267Z"}
+{"level":"info","message":"LOGOUT_SUCCESSFUL","reason":"User has been logout divyansh@test.com","timestamp":"2024-01-17T09:26:38.592Z"}
+{"email":"divyansh@test.com","level":"info","message":"LOGIN_SUCCESSFUL","timestamp":"2024-01-17T09:52:40.994Z"}

@@ -1,0 +1,38 @@
+EVENT MANGEMENT WEB APIs
+
+# 1> Event collection APIs =>
+
+create api (event.save())
+getEvent api (event.find())= shows all the Event
+getEvent api(event.find(regex)) = shows filtered event based on searching
+
+# 2> User collection APIs =>
+
+register api(user.save()) = apply validation, becrypt the password(hashing) before saving to DB
+login api(user.findOne()) = apply validation, if get the user then check for password(becrypt), for successful login
+provide a token to user which it will save ito Db user schema
+
+## create Middleware and apply it in between event creation(make the token mandatory for creation of event)
+
+## authMiddleware => token from header
+
+                => verify the token
+                => check the expiry of token
+                => if all good go for next()
+
+# Logout api for user collection
+
+=>getting the token from header
+=>decode the token which contains(id,name,expiry etc)
+=>update the User model with empty token (User.findByIdAndUpadte(decodedToken.\_id,{token:""}))
+
+# Adding the log file for user
+
+=>using the winston package
+=>keep inside the utils folder(logger.js)
+=>add logger.ifo wherever wants to set the log details
+
+# 3> Attendee collection APIs
+
+=> Attendee model contains schema having eventId from req.body & userID from req.user(from middleware)
+=> join api inside event controller and save the data into attendees collection
