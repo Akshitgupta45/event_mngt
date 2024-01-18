@@ -8,7 +8,9 @@ const app = express();
 const PORT = 5000;
 
 const connectDb = async () => {
-	await mongoose.connect("mongodb://localhost:27017/event_mngt");
+	await mongoose.connect(
+		"mongodb+srv://Akshitgupta45:eefvfKJNqgXoLncM@cluster0.vljfa.mongodb.net/"
+	);
 };
 connectDb()
 	.then(() => {

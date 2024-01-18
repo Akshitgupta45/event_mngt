@@ -36,3 +36,5 @@ provide a token to user which it will save ito Db user schema
 
 => Attendee model contains schema having eventId from req.body & userID from req.user(from middleware)
 => join api inside event controller and save the data into attendees collection
+
+eefvfKJNqgXoLncM

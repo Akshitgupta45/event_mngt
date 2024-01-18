@@ -11,6 +11,7 @@
     "Apis"
   ],
   "author": "Akshit Gupta",
+
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
